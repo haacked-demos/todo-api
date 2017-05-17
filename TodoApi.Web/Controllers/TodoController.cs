@@ -9,7 +9,7 @@ namespace TodoApi.Web.Controllers
     [Route("api/[controller]")]
     public class TodoController : Controller
     {
-        private readonly ITodoRepository _todoRepository;
+        readonly ITodoRepository _todoRepository;
 
         public TodoController(ITodoRepository todoRepository)
         {
